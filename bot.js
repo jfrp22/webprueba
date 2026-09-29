@@ -803,3 +803,32 @@ window.addEventListener("DOMContentLoaded", () => {
   input.focus();
 });
 */
+
+/* ============================================================
+   AJUSTE MÓVIL: ocultar el toggle cuando el bot está abierto
+   ============================================================ */
+function actualizarEstadoBot() {
+  const abierto = !botWindow.classList.contains("bot-hidden");
+  document.body.classList.toggle("bot-open", abierto);
+}
+
+/* Escuchar cambios en la clase del bot */
+const observer = new MutationObserver(actualizarEstadoBot);
+observer.observe(botWindow, { attributes: true, attributeFilter: ["class"] });
+
+/* Estado inicial */
+actualizarEstadoBot();
+
+/* ============================================================
+   AJUSTE MÓVIL: scroll al input cuando se enfoca
+   ============================================================ */
+const botInput = document.getElementById("bot-input");
+if (botInput) {
+  botInput.addEventListener("focus", () => {
+    // Esperar a que el teclado aparezca
+    setTimeout(() => {
+      messages.scrollTop = messages.scrollHeight;
+      botInput.scrollIntoView({ behavior: "smooth", block: "end" });
+    }, 300);
+  });
+}
