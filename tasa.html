@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#1F10B7">
+  <meta name="description" content="Tasa de cambio del día - REDCHAMBU CA. Consulta el monto en Bolívares para tu plan de internet.">
+
+  <title>Tasa del Día | REDCHAMBU CA</title>
+
+  <link rel="icon" type="image/webp" href="RedChambuCA.webp">
+  <link rel="apple-touch-icon" href="RedChambuCA.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body class="is-preload">
+
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="index.html">REDCHAMBU CA</a></h1>
+      <nav id="nav">
+        <ul>
+          <li class="special">
+            <a href="#menu" class="menuToggle"><span>Menú</span></a>
+            <div id="menu">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#planes">Planes</a></li>
+                <li><a href="tasa.html">Cuánto cuesta</a></li>
+                <li><a href="index.html#proyecto">Proyecto WiFi</a></li>
+                <li><a href="index.html#cobertura">Cobertura</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="reporte.html">Reportar falla</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Header de página -->
+    <article id="main">
+      <header>
+        <h2>Tasa del Día</h2>
+        <p>Consulta el monto actualizado en Bolívares para el pago de tu servicio</p>
+      </header>
+
+      <!-- Tarjeta principal de tasa -->
+      <section class="wrapper style5">
+        <div class="inner" style="max-width:720px;">
+
+          <div class="rate-card">
+            <span class="rate-label">
+              <i class="fas fa-calendar-day"></i> Tasa oficial BCV
+            </span>
+
+            <div class="rate-value" id="rateValue">
+              Cargando... <span class="currency">Bs/USD</span>
+            </div>
+
+            <p class="rate-subtitle">Bolívares por 1 dólar estadounidense</p>
+
+            <div class="rate-meta">
+              <div class="rate-meta-item">
+                <span class="label">Fecha</span>
+                <span class="value" id="rateDate">—</span>
+              </div>
+              <div class="rate-meta-item">
+                <span class="label">Hora</span>
+                <span class="value" id="rateTime">—</span>
+              </div>
+              <div class="rate-meta-item">
+                <span class="label">Estado</span>
+                <span class="value green" id="rateStatus">
+                  <span class="status-badge" id="statusBadge"><span class="dot"></span> Actualizado</span>
+                </span>
+              </div>
+            </div>
+
+            <p style="color:#7A7A7A; font-size:0.85rem; margin:0;">
+              Última actualización: <strong id="lastUpdate" style="color:#1F10B7;">—</strong>
+            </p>
+          </div>
+
+          <!-- Info adicional -->
+          <div class="info-note">
+            <i class="fas fa-info-circle"></i>
+            <p>
+              <strong>Importante:</strong> Esta tasa es referencial y corresponde al valor publicado por el Banco Central de Venezuela (BCV). El monto exacto a pagar puede variar ligeramente al momento de la transacción. Para confirmar tu monto exacto, contáctanos por <strong>WhatsApp</strong> o <strong>correo</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planes en Bs -->
+      <section class="wrapper style2">
+        <div class="inner">
+          <header class="major" style="text-align:center;">
+            <h2>Precios en Bolívares</h2>
+            <p>Calculado automáticamente con la tasa del día</p>
+          </header>
+
+          <div class="row gtr-uniform">
+            <div class="col-3 col-6-medium col-12-small">
+              <div class="plan-bs-card">
+                <div class="plan-name-bs">Básico</div>
+                <span class="plan-speed-bs">100 Mbps · Fibra</span>
+                <div class="plan-bs-price">
+                  <span id="planBasicBs">—</span>
+                  <span class="currency">Bs/mes</span>
+                </div>
+                <div class="plan-usd">$23.2 USD / mes</div>
+                <a href="index.html#contacto" class="button primary" style="width:100%;">Contratar</a>
+              </div>
+            </div>
+
+            <div class="col-3 col-6-medium col-12-small">
+              <div class="plan-bs-card">
+                <div class="plan-name-bs">Avanzado</div>
+                <span class="plan-speed-bs">250 Mbps · Fibra</span>
+                <div class="plan-bs-price">
+                  <span id="planAdvancedBs">—</span>
+                  <span class="currency">Bs/mes</span>
+                </div>
+                <div class="plan-usd">$29 USD / mes</div>
+                <a href="index.html#contacto" class="button primary" style="width:100%;">Contratar</a>
+              </div>
+            </div>
+
+            <div class="col-3 col-6-medium col-12-small">
+              <div class="plan-bs-card">
+                <div class="plan-name-bs">Plus</div>
+                <span class="plan-speed-bs">400 Mbps · Fibra</span>
+                <div class="plan-bs-price">
+                  <span id="planPlusBs">—</span>
+                  <span class="currency">Bs/mes</span>
+                </div>
+                <div class="plan-usd">$35 USD / mes</div>
+                <a href="index.html#contacto" class="button primary" style="width:100%;">Contratar</a>
+              </div>
+            </div>
+
+            <div class="col-3 col-6-medium col-12-small">
+              <div class="plan-bs-card">
+                <div class="plan-name-bs">Antena</div>
+                <span class="plan-speed-bs">20 Mbps · Radio</span>
+                <div class="plan-bs-price">
+                  <span id="planAntennaBs">—</span>
+                  <span class="currency">Bs/mes</span>
+                </div>
+                <div class="plan-usd">$23.2 USD / mes</div>
+                <a href="index.html#contacto" class="button primary" style="width:100%;">Contratar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="https://wa.me/584268731872" target="_blank" rel="noopener noreferrer" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+        <li><a href="mailto:redchambuca@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; 2025 REDCHAMBU CA</li>
+        <li>RIF: J504571849</li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <!-- Scripts Spectral -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Tasa BCV -->
+  <script src="tasa.js"></script>
+
+</body>
+</html>

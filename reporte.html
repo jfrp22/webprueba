@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#1F10B7">
+  <meta name="description" content="Reporte de fallas - REDCHAMBU CA. Informa cualquier problema con tu servicio de internet de forma rápida por WhatsApp.">
+
+  <title>Reporte de Fallas | REDCHAMBU CA</title>
+
+  <link rel="icon" type="image/webp" href="RedChambuCA.webp">
+  <link rel="apple-touch-icon" href="RedChambuCA.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body class="is-preload">
+
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="index.html">REDCHAMBU CA</a></h1>
+      <nav id="nav">
+        <ul>
+          <li class="special">
+            <a href="#menu" class="menuToggle"><span>Menú</span></a>
+            <div id="menu">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#planes">Planes</a></li>
+                <li><a href="tasa.html">Cuánto cuesta</a></li>
+                <li><a href="index.html#proyecto">Proyecto WiFi</a></li>
+                <li><a href="index.html#cobertura">Cobertura</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="reporte.html">Reportar falla</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Header de página -->
+    <article id="main">
+      <header>
+        <h2>Reporte de Fallas</h2>
+        <p>Cuéntanos qué está pasando con tu servicio</p>
+      </header>
+
+      <section class="wrapper style5">
+        <div class="inner" style="max-width:720px;">
+
+          <div style="text-align:center; margin-bottom:2em;">
+            <div style="background:rgba(230,180,34,0.12); width:80px; height:80px; border-radius:24px; display:flex; align-items:center; justify-content:center; margin:0 auto 1em;">
+              <i class="fas fa-exclamation-triangle" style="font-size:2rem; color:#e6b422;"></i>
+            </div>
+            <h2 style="font-size:1.5em;">Información del reporte</h2>
+            <p style="color:#7A7A7A;">Todos los campos marcados con <span style="color:#e6b422; font-weight:700;">*</span> son obligatorios.</p>
+          </div>
+
+          <form id="reportForm">
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <label for="name">Nombre completo <span style="color:#e6b422;">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <label for="phone">Teléfono / WhatsApp <span style="color:#e6b422;">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Ej: +58 426 8731 872" required>
+              </div>
+
+              <div class="col-6 col-12-xsmall">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com">
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <label for="zone">Zona / Sector <span style="color:#e6b422;">*</span></label>
+                <input type="text" id="zone" name="zone" placeholder="Ej: Barrio Nuevo" required>
+              </div>
+
+              <div class="col-6 col-12-xsmall">
+                <label for="service_type">Tipo de servicio <span style="color:#e6b422;">*</span></label>
+                <select id="service_type" name="service_type" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Fibra Óptica">Fibra Óptica</option>
+                  <option value="Antena">Antena</option>
+                  <option value="Zona WiFi">Zona WiFi</option>
+                  <option value="No estoy seguro">No estoy seguro</option>
+                </select>
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <label for="failure_type">Tipo de falla <span style="color:#e6b422;">*</span></label>
+                <select id="failure_type" name="failure_type" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Sin conexión">Sin conexión</option>
+                  <option value="Internet lento">Internet lento</option>
+                  <option value="Intermitencias">Intermitencias / cortes</option>
+                  <option value="Problema con el router">Problema con el router</option>
+                  <option value="Cable dañado">Cable dañado</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label>Nivel de urgencia <span style="color:#e6b422;">*</span></label>
+                <div class="row gtr-uniform">
+                  <div class="col-4 col-12-small">
+                    <input type="radio" id="urg-low" name="urgency" value="Baja" required>
+                    <label for="urg-low">Baja</label>
+                  </div>
+                  <div class="col-4 col-12-small">
+                    <input type="radio" id="urg-mid" name="urgency" value="Media" required>
+                    <label for="urg-mid">Media</label>
+                  </div>
+                  <div class="col-4 col-12-small">
+                    <input type="radio" id="urg-high" name="urgency" value="Alta" required>
+                    <label for="urg-high">Alta</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="message">Descripción del problema <span style="color:#e6b422;">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe con detalle qué está pasando, desde cuándo y si afecta a toda la zona o solo a tu hogar..." required></textarea>
+              </div>
+
+              <div class="col-12">
+                <ul class="actions">
+                  <li>
+                    <button type="submit" class="button primary btn-whatsapp">
+                      <i class="fab fa-whatsapp" style="margin-right:8px;"></i> Enviar reporte por WhatsApp
+                    </button>
+                  </li>
+                  <li><a href="index.html" class="button">Volver al inicio</a></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="https://wa.me/584268731872" target="_blank" rel="noopener noreferrer" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+        <li><a href="mailto:redchambuca@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; 2025 REDCHAMBU CA</li>
+        <li>RIF: J504571849</li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <!-- Scripts Spectral -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Script: enviar reporte por WhatsApp -->
+  <script>
+    const WHATSAPP_SOPORTE = '584262954205';
+
+    document.getElementById('reportForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name         = document.getElementById('name').value.trim();
+      const phone        = document.getElementById('phone').value.trim();
+      const email        = document.getElementById('email').value.trim();
+      const zone         = document.getElementById('zone').value.trim();
+      const service_type = document.getElementById('service_type').value;
+      const failure_type = document.getElementById('failure_type').value;
+      const urgency      = (document.querySelector('input[name="urgency"]:checked') || {}).value || '';
+      const message      = document.getElementById('message').value.trim();
+
+      let texto =
+        `*NUEVO REPORTE DE FALLA - REDCHAMBU CA*\n\n` +
+        `👤 *Nombre:* ${name}\n` +
+        `📞 *Teléfono:* ${phone}\n`;
+
+      if (email) texto += `✉️ *Correo:* ${email}\n`;
+
+      texto +=
+        `📍 *Zona:* ${zone}\n` +
+        `📡 *Servicio:* ${service_type}\n` +
+        `⚠️ *Tipo de falla:* ${failure_type}\n` +
+        `🔥 *Urgencia:* ${urgency}\n\n` +
+        `📝 *Descripción:*\n${message}`;
+
+      const url = `https://wa.me/${WHATSAPP_SOPORTE}?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+</body>
+</html>
