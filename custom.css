@@ -1169,3 +1169,310 @@ body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
   color: var(--rc-azul-violaceo) !important;
   box-shadow: inset 0 0 0 2px var(--rc-mustard) !important;
 }
+
+
+/* ============================================================
+   CORRECCIÓN DE CONTRASTE POR SECCIÓN
+   ============================================================ */
+
+/* ---------- WRAPPER STYLE1 (fondo azul violáceo) ---------- */
+.wrapper.style1 {
+  background-color: var(--rc-azul-violaceo) !important;
+  color: #ffffff !important;
+}
+
+.wrapper.style1 h2,
+.wrapper.style1 h3,
+.wrapper.style1 h4,
+.wrapper.style1 h5,
+.wrapper.style1 h6 {
+  color: var(--rc-mustard) !important;
+}
+
+.wrapper.style1 p,
+.wrapper.style1 li,
+.wrapper.style1 span,
+.wrapper.style1 div {
+  color: #ffffff !important;
+}
+
+.wrapper.style1 strong,
+.wrapper.style1 b {
+  color: var(--rc-mustard) !important;
+}
+
+/* ---------- WRAPPER STYLE2 (fondo gris claro) ---------- */
+.wrapper.style2 {
+  background-color: var(--rc-gris-claro) !important;
+  color: var(--rc-negro) !important;
+}
+
+.wrapper.style2 h2,
+.wrapper.style2 h3,
+.wrapper.style2 h4,
+.wrapper.style2 h5,
+.wrapper.style2 h6 {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.wrapper.style2 p,
+.wrapper.style2 li,
+.wrapper.style2 span,
+.wrapper.style2 div,
+.wrapper.style2 label {
+  color: var(--rc-negro) !important;
+}
+
+.wrapper.style2 strong,
+.wrapper.style2 b {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* Cobertura dentro de style2 (fondo gris claro) */
+.wrapper.style2 .coverage-tag {
+  background: var(--rc-blanco) !important;
+  color: var(--rc-azul-violaceo) !important;
+  border: 1px solid rgba(31, 16, 183, 0.1) !important;
+}
+
+.wrapper.style2 .coverage-tag:hover {
+  background: var(--rc-mustard) !important;
+  color: var(--rc-azul-violaceo) !important;
+  border-color: var(--rc-mustard) !important;
+}
+
+/* Planes en Bs dentro de style2 (tasa.html) */
+.wrapper.style2 .plan-bs-card {
+  background: var(--rc-blanco) !important;
+  color: var(--rc-negro) !important;
+}
+
+.wrapper.style2 .plan-bs-card .plan-name-bs,
+.wrapper.style2 .plan-bs-card .plan-bs-price {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.wrapper.style2 .plan-bs-card .plan-usd {
+  color: var(--rc-gris) !important;
+}
+
+.wrapper.style2 .plan-bs-card .plan-speed-bs {
+  background: rgba(31, 16, 183, 0.08) !important;
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* ---------- WRAPPER STYLE3 (fondo azul eléctrico) ---------- */
+.wrapper.style3 {
+  background-color: var(--rc-azul-electrico) !important;
+  color: #ffffff !important;
+}
+
+.wrapper.style3 h2,
+.wrapper.style3 h3,
+.wrapper.style3 h4 {
+  color: var(--rc-mustard) !important;
+}
+
+.wrapper.style3 p,
+.wrapper.style3 li,
+.wrapper.style3 span {
+  color: #ffffff !important;
+}
+
+/* ---------- WRAPPER STYLE4 (fondo azul violáceo - contacto) ---------- */
+.wrapper.style4 {
+  background-color: var(--rc-azul-violaceo) !important;
+  color: #ffffff !important;
+}
+
+.wrapper.style4 h2,
+.wrapper.style4 h3,
+.wrapper.style4 h4 {
+  color: var(--rc-mustard) !important;
+}
+
+.wrapper.style4 p,
+.wrapper.style4 li,
+.wrapper.style4 span,
+.wrapper.style4 div {
+  color: #ffffff !important;
+}
+
+.wrapper.style4 .contact-info p {
+  color: #ffffff !important;
+}
+
+/* ---------- WRAPPER STYLE5 (fondo blanco) ---------- */
+.wrapper.style5 {
+  background-color: var(--rc-blanco) !important;
+  color: var(--rc-negro) !important;
+}
+
+.wrapper.style5 h2,
+.wrapper.style5 h3,
+.wrapper.style5 h4,
+.wrapper.style5 h5,
+.wrapper.style5 h6 {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.wrapper.style5 p,
+.wrapper.style5 li,
+.wrapper.style5 span,
+.wrapper.style5 div,
+.wrapper.style5 label {
+  color: var(--rc-negro) !important;
+}
+
+.wrapper.style5 strong,
+.wrapper.style5 b {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* ============================================================
+   PROYECTO WIFI (.wifi-project) — fondo azul, texto blanco
+   ============================================================ */
+.wifi-project {
+  background: linear-gradient(135deg, var(--rc-azul-violaceo) 0%, var(--rc-azul-electrico) 100%) !important;
+  color: #ffffff !important;
+}
+
+.wifi-project h2 {
+  color: var(--rc-mustard) !important;
+}
+
+.wifi-project p {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.wifi-project .status-badge {
+  background: var(--rc-mustard) !important;
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* Tags de cobertura dentro del proyecto WiFi */
+.wifi-project .coverage-tag {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.wifi-project .coverage-tag:hover {
+  background: var(--rc-mustard) !important;
+  color: var(--rc-azul-violaceo) !important;
+  border-color: var(--rc-mustard) !important;
+}
+
+/* ============================================================
+   COBERTURA (sección con .wrapper.style2)
+   ============================================================ */
+#cobertura .coverage-card,
+#cobertura .plan-card {
+  background: var(--rc-blanco) !important;
+  color: var(--rc-negro) !important;
+}
+
+#cobertura h3 {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* ============================================================
+   TASA — Precios en Bolívares
+   ============================================================ */
+.plan-bs-card .plan-name-bs {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.plan-bs-card .plan-bs-price,
+.plan-bs-card .plan-bs-price span {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.plan-bs-card .plan-bs-price .currency {
+  color: var(--rc-gris) !important;
+}
+
+.plan-bs-card .plan-usd {
+  color: var(--rc-gris) !important;
+}
+
+.plan-bs-card .plan-speed-bs {
+  background: rgba(31, 16, 183, 0.08) !important;
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* Rate card (tarjeta principal de tasa) */
+.rate-card,
+.rate-card * {
+  color: var(--rc-negro);
+}
+
+.rate-card h2,
+.rate-card h3 {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.rate-value,
+.rate-value span {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.rate-value .currency {
+  color: var(--rc-gris) !important;
+}
+
+.rate-subtitle,
+.rate-meta-item .label {
+  color: var(--rc-gris) !important;
+}
+
+.rate-meta-item .value {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+/* ============================================================
+   TEXTOS GENERALES EN PÁGINAS INTERNAS
+   ============================================================ */
+#main > header h2,
+#main > header p {
+  color: #ffffff !important;
+}
+
+#main > header h2 {
+  color: var(--rc-mustard) !important;
+}
+
+/* ============================================================
+   FORMULARIO (reporte.html)
+   ============================================================ */
+.wrapper.style5 label {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.wrapper.style5 input,
+.wrapper.style5 select,
+.wrapper.style5 textarea {
+  color: var(--rc-negro) !important;
+  background-color: rgba(31, 16, 183, 0.05) !important;
+}
+
+.wrapper.style5 input::placeholder,
+.wrapper.style5 textarea::placeholder {
+  color: var(--rc-gris) !important;
+  opacity: 0.7;
+}
+
+/* ============================================================
+   INFO NOTE (tasa.html)
+   ============================================================ */
+.info-note p {
+  color: var(--rc-negro) !important;
+}
+
+.info-note strong {
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.info-note i {
+  color: var(--rc-mustard-dark) !important;
+}
