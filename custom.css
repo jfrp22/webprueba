@@ -1332,37 +1332,68 @@ body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
 /* ============================================================
    PROYECTO WIFI (.wifi-project) — fondo azul, texto blanco
    ============================================================ */
-.wifi-project {
-  background: linear-gradient(135deg, var(--rc-azul-violaceo) 0%, var(--rc-azul-electrico) 100%) !important;
+/* ============================================================
+   PROYECTO WIFI — Forzar texto blanco sobre fondo azul
+   (Alta especificidad para ganar a .wrapper.style5 p)
+   ============================================================ */
+
+/* El contenedor */
+.wrapper .wifi-project,
+.wrapper.style5 .wifi-project,
+section#proyecto .wifi-project {
+  background: linear-gradient(135deg, #1F10B7 0%, #0019FF 100%) !important;
+  background-color: #1F10B7 !important;
   color: #ffffff !important;
 }
 
-.wifi-project h2 {
-  color: var(--rc-mustard) !important;
+/* Título principal */
+.wrapper .wifi-project h2,
+.wrapper.style5 .wifi-project h2,
+section#proyecto .wifi-project h2 {
+  color: #e6b422 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.wifi-project p {
-  color: rgba(255, 255, 255, 0.9) !important;
+/* Párrafos */
+.wrapper .wifi-project p,
+.wrapper.style5 .wifi-project p,
+section#proyecto .wifi-project p,
+.wrapper.style5 #proyecto .wifi-project p {
+  color: #ffffff !important;
 }
 
-.wifi-project .status-badge {
-  background: var(--rc-mustard) !important;
-  color: var(--rc-azul-violaceo) !important;
+/* El badge "Proyecto en desarrollo" */
+.wrapper .wifi-project .status-badge,
+.wrapper.style5 .wifi-project .status-badge,
+section#proyecto .wifi-project .status-badge {
+  background: #e6b422 !important;
+  color: #1F10B7 !important;
+  font-weight: 700 !important;
 }
 
-/* Tags de cobertura dentro del proyecto WiFi */
-.wifi-project .coverage-tag {
+/* Los tags de zonas */
+.wrapper .wifi-project .coverage-tag,
+.wrapper.style5 .wifi-project .coverage-tag,
+section#proyecto .wifi-project .coverage-tag {
   background: rgba(255, 255, 255, 0.15) !important;
   color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
-.wifi-project .coverage-tag:hover {
-  background: var(--rc-mustard) !important;
-  color: var(--rc-azul-violaceo) !important;
-  border-color: var(--rc-mustard) !important;
+.wrapper .wifi-project .coverage-tag:hover,
+.wrapper.style5 .wifi-project .coverage-tag:hover,
+section#proyecto .wifi-project .coverage-tag:hover {
+  background: #e6b422 !important;
+  color: #1F10B7 !important;
+  border-color: #e6b422 !important;
 }
 
+/* Iconos dentro del wifi-project */
+.wrapper .wifi-project i,
+.wrapper.style5 .wifi-project i,
+section#proyecto .wifi-project i {
+  color: inherit;
+}
 /* ============================================================
    COBERTURA (sección con .wrapper.style2)
    ============================================================ */
