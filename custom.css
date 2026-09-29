@@ -1153,3 +1153,43 @@ body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
     max-width: 200px;
   }
 }
+
+/* ============================================================
+   BOTONES EN EL HEADER (Reportar falla, etc.)
+   ============================================================ */
+#header nav > ul > li > a.button,
+#header nav > ul > li > a.btn,
+#header nav > ul > li > a[class*="button"] {
+  background-color: var(--rc-mustard) !important;
+  color: var(--rc-azul-violaceo) !important;
+  box-shadow: 0 4px 12px rgba(230, 180, 34, 0.3) !important;
+  border-radius: 40px !important;
+  padding: 0 1.5em !important;
+  height: 2.2em !important;
+  line-height: 2.2em !important;
+  margin: 0.4em 0.5em 0.4em 0 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  font-size: 0.75em !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+#header nav > ul > li > a.button:hover,
+#header nav > ul > li > a.btn:hover,
+#header nav > ul > li > a[class*="button"]:hover {
+  background-color: var(--rc-mustard-dark) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(230, 180, 34, 0.5) !important;
+}
+
+/* Cuando el header es transparente (index, sobre el banner) */
+#header.alt nav > ul > li > a.button,
+#header.alt nav > ul > li > a.btn,
+#header.alt nav > ul > li > a[class*="button"] {
+  background-color: var(--rc-mustard) !important;
+  color: var(--rc-azul-violaceo) !important;
+}
