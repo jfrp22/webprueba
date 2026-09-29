@@ -1099,3 +1099,57 @@ body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
   line-height: 3em;
   letter-spacing: 0.1em;
 }
+
+/* ============================================================
+   LOGO EN EL BANNER (index)
+   ============================================================ */
+#banner .banner-logo {
+  display: inline-block;
+  margin: 0 auto 1.5em;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  animation: fadeInScale 0.8s ease-out;
+}
+
+#banner .banner-logo img {
+  display: block;
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 20px rgba(31, 16, 183, 0.15));
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Ajuste de espaciado del banner */
+#banner .inner {
+  padding: 0 1.5em;
+}
+
+#banner p {
+  margin-top: 0.5em;
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+  #banner .banner-logo img {
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #banner .banner-logo img {
+    max-width: 200px;
+  }
+}
