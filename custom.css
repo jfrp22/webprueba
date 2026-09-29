@@ -1028,3 +1028,74 @@ body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
     max-width: 160px;
   }
 }
+
+/* ============================================================
+   LOGO EN HEADER
+   ============================================================ */
+#header h1 {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+}
+
+#header h1 a.logo-rc {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+#header h1 a.logo-rc img {
+  height: 55px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Sobre el banner (index) el logo necesita sombra sutil */
+#header.alt h1 a.logo-rc img {
+  filter: drop-shadow(0 2px 6px rgba(31, 16, 183, 0.15));
+}
+
+/* Header más alto para que quepa el logo cómodo */
+#header {
+  height: 4em;
+  line-height: 4em;
+}
+#page-wrapper { padding-top: 4em; }
+#header nav > ul > li > a.menuToggle:after { height: 5em; }
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+  #header { height: 3.5em; line-height: 3.5em; }
+  #page-wrapper { padding-top: 3.5em; }
+
+  #header h1 a.logo-rc img {
+    height: 42px;
+    max-width: 170px;
+  }
+}
+
+/* ============================================================
+   PÁGINA 404
+   ============================================================ */
+.error-hero .actions.special li {
+  padding: 0;
+}
+
+.error-hero .button.primary {
+  background-color: var(--rc-mustard) !important;
+  color: var(--rc-azul-violaceo) !important;
+}
+
+.error-hero .button {
+  font-size: 0.85rem;
+  padding: 0 1.5em;
+  height: 3em;
+  line-height: 3em;
+  letter-spacing: 0.1em;
+}
