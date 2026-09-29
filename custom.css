@@ -1155,41 +1155,17 @@ body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
 }
 
 /* ============================================================
-   BOTONES EN EL HEADER (Reportar falla, etc.)
+   BOTONES EN SECCIÓN CONTACTO (#contacto / .wrapper.style4)
    ============================================================ */
-#header nav > ul > li > a.button,
-#header nav > ul > li > a.btn,
-#header nav > ul > li > a[class*="button"] {
-  background-color: var(--rc-mustard) !important;
-  color: var(--rc-azul-violaceo) !important;
-  box-shadow: 0 4px 12px rgba(230, 180, 34, 0.3) !important;
-  border-radius: 40px !important;
-  padding: 0 1.5em !important;
-  height: 2.2em !important;
-  line-height: 2.2em !important;
-  margin: 0.4em 0.5em 0.4em 0 !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.1em !important;
-  text-transform: uppercase !important;
-  font-size: 0.75em !important;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
+.wrapper.style4 .button:not(.button.primary):not(.btn-whatsapp) {
+  background-color: transparent !important;
+  color: var(--rc-blanco) !important;
+  box-shadow: inset 0 0 0 2px var(--rc-mustard) !important;
+  border: none;
 }
 
-#header nav > ul > li > a.button:hover,
-#header nav > ul > li > a.btn:hover,
-#header nav > ul > li > a[class*="button"]:hover {
-  background-color: var(--rc-mustard-dark) !important;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(230, 180, 34, 0.5) !important;
-}
-
-/* Cuando el header es transparente (index, sobre el banner) */
-#header.alt nav > ul > li > a.button,
-#header.alt nav > ul > li > a.btn,
-#header.alt nav > ul > li > a[class*="button"] {
+.wrapper.style4 .button:not(.button.primary):not(.btn-whatsapp):hover {
   background-color: var(--rc-mustard) !important;
   color: var(--rc-azul-violaceo) !important;
+  box-shadow: inset 0 0 0 2px var(--rc-mustard) !important;
 }
