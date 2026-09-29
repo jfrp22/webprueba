@@ -986,3 +986,45 @@ table th { color: var(--rc-azul-violaceo) !important; }
   #bot-window { width: calc(100vw - 2rem); right: 1rem; bottom: 5rem; height: calc(100vh - 7rem); }
   .rate-value { font-size: 2rem; }
 }
+
+/* ===== Logo en header ===== */
+#header h1 {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+}
+
+#header h1 a.logo-rc {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: none;
+  padding: 0;
+}
+
+#header h1 a.logo-rc img {
+  height: 55px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Header alt (sobre el banner en index) */
+#header.alt h1 a.logo-rc img {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+}
+
+/* Cuando el header se vuelve sólido al scrollear */
+body:not(.landing) #header h1 a.logo-rc img,
+body.landing:not(.is-preload) #header.alt h1 a.logo-rc img {
+  /* sin filtro extra */
+}
+
+@media screen and (max-width: 736px) {
+  #header h1 a.logo-rc img {
+    height: 40px;
+    max-width: 160px;
+  }
+}
